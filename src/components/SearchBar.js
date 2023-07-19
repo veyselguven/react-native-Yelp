@@ -4,7 +4,7 @@ import { Feather } from "@expo/vector-icons";
 const SearchBar = () => {
   return (
     <View style={styles.backgroundStyle}>
-      <Feather name="search" size={35} color="black" />
+      <Feather name="search" color="black" style={styles.iconStyle} />
       <TextInput placeholder="Search" style={styles.inputStyle} />
     </View>
   );
@@ -12,6 +12,7 @@ const SearchBar = () => {
 const styles = StyleSheet.create({
   backgroundStyle: {
     // backgroundColor: "#F0EEEE",
+    marginTop: 15,
     backgroundColor: "gray",
     height: 50,
     borderRadius: 5,
@@ -19,9 +20,15 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   inputStyle: {
-    borderColor: "black",
-    borderWidth: 1,
+    // borderColor: "black",
+    // borderWidth: 1,
     flex: 1,
+    fontSize: 20,
+  },
+  iconStyle: {
+    fontSize: 45,
+    alignSelf: "center",
+    marginHorizontal: 15,
   },
 });
 
